@@ -4,37 +4,92 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" href="" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
         <title>My Portfolio</title>
     </head>
     <body>
         <!-- Header -->
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="" class="nav-logo">Alex Brattan</a>
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link">About Me</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="projects.html" class="nav-link">Projects</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="contact.html" class="button">Contact Me</a>
+                        </li>
+                    </ul>
+                    <!--Close-->
+                    <div class="nav-close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+                <div class="nav-actions">
+
+
+                    <div class="nav-toggle" id="nav-toggle">
+                        <i class="ri-menu-3-line"></i>
+                    </div>
+                </div>
             </nav>
         </header>
-        <main>
-            <!-- About section -->
-            <section id="about">
-                <h2>About</h2>
-                <p>This is the about section of my portfolio.</p>
-            </section>
+        <main class="main">
+            <section class="home section">
+                <div class="home-rect"></div>
 
-            <!-- Projects section -->
-            <section id="projects">
-                <h2>Projects</h2>
-                <p>Here are some of the projects I have worked on.</p>
-            </section>
+                <div class="home-container container grid">
+                    <div class="home-per per">
+                        <div class="per-content">
+                            <img src="images/placeholder.png" alt="image" class="per-img">
+                        </div> 
+                    </div>
+
+                    <div class="home-content grid">
+                        <div class="home-data grid">
+                            <h1 class="home-name">Alex Brattan</h1>
+
+                            <h2 class="home-prof">Developer for <span id="counter">0</span> days</h2>
+
+                            <div class="home-social">
+                                <a href="" target="_blank" class="home-social-links">
+                                    <i class="ri-github-fill"></i>
+                                </a>
+
+                                <a href="" target="_blank" class="home-social-links">
+                                    <i class="ri-linkedin-box-fill"></i>
+                                </a>
+
+                                <a href="" target="_blank" class="home-social-links">
+                                    <i class="ri-reddit-fill"></i>
+                                </a>
+                            </div>
+
+                            <a href="cv/alex-brattan.pdf" download="" class="home-button button">Download CV</a>
+                        </div>
+                    </div>
+                </div>  
+            </section>  
         </main>
         <footer>
             <p>&copy; 2024 Alex Brattan</p>
         </footer>
-        <script src="script.js"></script>
+        <!--JS-->
+        <script src="javascript/script.js"></script>
+        <script src="javascript/main.js"></script>
+        <script src="javascript/index.js"></script>
     </body>
 </html>
     
